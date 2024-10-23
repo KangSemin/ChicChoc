@@ -1,0 +1,1 @@
+SELECT substr(PRODUCT_CODE,1,2), count(1) from PRODUCT group by 1;
