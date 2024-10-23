@@ -1,0 +1,1 @@
+SELECT _in.ANIMAL_ID, _in.ANIMAL_TYPE, _in.NAME from ANIMAL_INS _in inner join ANIMAL_OUTS _out on _in.ANIMAL_ID= _out.ANIMAL_ID where SEX_UPON_INTAKE like('Intact%') and SEX_UPON_OUTCOME not like('Intact%') order by 1;
