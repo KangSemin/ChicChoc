@@ -1,0 +1,1 @@
+SELECT _b.BOOK_ID, _a.AUTHOR_NAME, date_format(_b.PUBLISHED_DATE,'%Y-%m-%d')  from BOOK _b left join AUTHOR _a on _b.AUTHOR_ID=_a.AUTHOR_ID where _b.CATEGORY='경제' order by _b.PUBLISHED_DATE;
