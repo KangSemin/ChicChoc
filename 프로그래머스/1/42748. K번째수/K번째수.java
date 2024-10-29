@@ -1,7 +1,6 @@
 class Solution {
     public int[] solution(int[] a, int[][] b) {
         int[] c = new int[b.length];
-        int cnt=0;
         for(int i=0;i<b.length;i++)
         {
             int[] d = new int[b[i][1]-b[i][0]+1];
@@ -10,17 +9,13 @@ class Solution {
                 d[k]=a[j];
             }
             Sort(d);
-            c[cnt++]=d[b[i][2]-1];
+            c[i]=d[b[i][2]-1];
         }
-        
-        
         return c;
     }
     
-    
     public void Sort(int[] a)
     {
-        
         int temp =0;
         for(int i=0;i<a.length-1;i++)
         {
@@ -34,8 +29,5 @@ class Solution {
                 }
             }
         }
-        
-
     }
-    
 }
