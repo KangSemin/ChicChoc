@@ -1,0 +1,1 @@
+SELECT MEMBER_ID, MEMBER_NAME, GENDER, substr(DATE_OF_BIRTH,1,10) from MEMBER_PROFILE where date_format(DATE_OF_BIRTH,'%m') = '03' and tlno is not NULL and gender = 'W' order by 1;
