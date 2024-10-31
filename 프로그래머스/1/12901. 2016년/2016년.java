@@ -5,7 +5,7 @@ class Solution {
         int e=0;
         for(int i=0;i<a-1;i++)
             e+=d[i];
-        e= (e+b-1)%7;     
-        return c[(e)];
+            
+        return c[((e+b-1)%7)];
     }
 }
