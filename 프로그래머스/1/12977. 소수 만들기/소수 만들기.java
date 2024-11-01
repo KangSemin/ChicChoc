@@ -20,7 +20,7 @@ class Solution {
     {
         if(b.contains(a)) return true;
         
-        for(int i=2;i<a;i++)
+        for(int i=2;i*i<=a;i++)
         {
             if(a%i==0) return false;
         }
