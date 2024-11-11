@@ -6,7 +6,8 @@ class Solution {
             n=m;
             m=temp;
         }
-        int[] a={gcd(m,n),n*m/gcd(m,n)};
+        int b=gcd(m,n);
+        int[] a={b,n*m/b};
         return a;
     }
     
